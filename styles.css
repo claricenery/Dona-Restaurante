@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*naavegador*/
+
+header {
+    background-image: radial-gradient(circle at 56.22% 54.36%, #7e7128 0, #696323 16.67%, #53551d 33.33%, #3e4417 50%, #2b3411 66.67%, #1c2509 83.33%, #101900 100%);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.logo {
+    width: 80px;
+    border-radius: 50%;
+    right: 50%;
+    justify-content: center;
+    display: inline-flex;;
+    align-items: center;
+    cursor: pointer;
+    color: y;
+    filter: drop-shadow(10px 7px 10px #bc7e20);
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 40%;
+    cursor: pointer;
+  }
+
+nav {
+    display: flex;
+    width: 350px; /*espaço do menu*/
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 18px; 
+    position: relative;
+}
+
+nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #fbff00, #f3490b); 
+     position: absolute;
+     top: 30;
+     left: 0;
+     transition: width 0.5s;
+}
+
+nav a:hover::after{
+    width: 30px;
+}
+
+.c-icone button{
+    background-image: linear-gradient(45deg, #fbff00, #f3490b);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+  
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .content img {
+    width: 300px; 
+    height: auto; 
+    margin-right: 20px;
+    margin-left: 4rem
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.home-slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .home-slider img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .home-slider img.active {
+    transform: translateX(0);
+  }
+  
+  .home-slider img.prev {
+    transform: translateX(-100%);
+  }
+  
+  .home-slider img.next {
+    transform: translateX(100%);
+  }
+
+
+.cta {
+    background-image: linear-gradient(45deg, #fbff00, #f3490b);
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    margin-top: 1rem;
+    border-radius: 25px;
+    
+}
+.cta:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.text-container h1 {
+    color: black;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(10px 7px 10px #f6be05);
+}
+
+.text-container h3 {
+    color: black;
+    font-size: 2rem;
+    font-weight: 200px;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+}
+
+/*cardapio*/
+
+.underlined{
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+.cardapio { /*titulos cardapio*/
+    flex-wrap: wrap;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.prato {
+    background-color: #ede0e0;
+    padding: 1rem;
+}
+
+.image-resize {
+    width: 100px; 
+    height: auto;
+    margin-left: 2rem; 
+}
+
+.image-resize2 {
+    width: 100px; 
+    height: 132px;
+    margin-left: 2rem; 
+}
+
+/*contatos*/
+
+.content{
+    padding: 10px;
+}
+
+.underlined2{
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+    max-width: 300px;    
+}
+
+label {
+    display: block;
+    margin-top: 10px;margin-left: 3rem; 
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;margin-left: 2rem; 
+}
+
+button {
+    background-color: #ff6347;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+
+button[type="submit"] {
+    margin-top: 10px; 
+    margin-left: 5rem; 
+  }
+
